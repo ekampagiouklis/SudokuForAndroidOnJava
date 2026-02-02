@@ -8,10 +8,9 @@ A classic Sudoku puzzle game built natively for Android. This project was develo
 
 ## 📱 Screenshots
 
-| Main Menu | Game Board | Win Screen |
+| 🏠 Main Menu | 🎮 Gameplay | 🏆 Win Screen |
 |:---:|:---:|:---:|
-| <img src="screenshots/menu.png" width="200"/> | <img src="screenshots/game.png" width="200"/> | <img src="screenshots/win.png" width="200"/> |
-
+| <img src="https://github.com/user-attachments/assets/4638794f-134a-4dbf-8361-3afcf0586b0f" width="250"> | <img src="https://github.com/user-attachments/assets/e959fa62-e268-434d-85a5-c283e6a04710" width="250"> | <img src="https://github.com/user-attachments/assets/6635497b-2f42-4631-b8e3-52d7c8fa7538" width="250"> |
 ## ✨ Features
 
 * **Classic Gameplay:** Traditional 9x9 Grid.
