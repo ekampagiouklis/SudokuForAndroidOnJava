@@ -52,7 +52,7 @@ A classic Sudoku puzzle game built natively for Android. This project was develo
 
 ## 👤 Author
 
-**[Your Name]**
+**[Evangelos Kampagiouklis]**
 
 * [GitHub Profile](https://github.com/ekampagiouklis)
 * [LinkedIn Profile](https://www.linkedin.com/in/evangelos-kampagiouklis-27676b247/)
