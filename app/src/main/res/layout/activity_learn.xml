@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tv_learn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rules"
+            android:textColor="#000000"
+            android:textSize="64sp"
+            android:fontFamily="@font/ztnature_medium"
+            android:letterSpacing="-0.05"
+            android:includeFontPadding="false"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_row_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Row"
+            android:textColor="#E88E2E"
+            android:textSize="32sp"
+            android:fontFamily="@font/ztnature_medium"
+            android:includeFontPadding="false"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_learn_title" />
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_row_label">
+
+            <LinearLayout
+                android:id="@+id/row_anim_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp">
+
+                <TextView style="@style/BubbleStyle" android:text="1" android:background="@drawable/circle_orange"/>
+                <TextView style="@style/BubbleStyle" android:text="2" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="3" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="4" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="5" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="6" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="7" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="8" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="9" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="1" android:background="@drawable/circle_orange"/>
+                <TextView style="@style/BubbleStyle" android:text="2" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="3" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="4" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="5" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="6" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="7" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="8" android:background="@drawable/circle_grey"/>
+                <TextView style="@style/BubbleStyle" android:text="9" android:background="@drawable/circle_grey"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_row_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Each number appears only once per horizontal row."
+            android:textSize="18sp"
+            android:textColor="#404040"
+            android:fontFamily="@font/ztnature_medium"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scroll_container" />
+
+
+        <TextView
+            android:id="@+id/tv_col_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Column"
+            android:textColor="#E88E2E"
+            android:textSize="32sp"
+            android:fontFamily="@font/ztnature_medium"
+            android:includeFontPadding="false"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_row_desc" />
+
+        <ScrollView
+            android:id="@+id/vertical_scroll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_col_label"
+            app:layout_constraintBottom_toTopOf="@id/btn_next_page">
+
+            <LinearLayout
+                android:id="@+id/col_anim_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/BubbleStyle" android:text="1" android:background="@drawable/circle_orange" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="2" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="3" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="4" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="5" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="6" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="7" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="8" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="9" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="1" android:background="@drawable/circle_orange" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="2" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="3" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="4" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="5" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="6" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="7" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="8" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+                <TextView style="@style/BubbleStyle" android:text="9" android:background="@drawable/circle_grey" android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_col_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Each number appears only once per vertical column."
+            android:textSize="18sp"
+            android:textColor="#404040"
+            android:fontFamily="@font/ztnature_medium"
+            android:gravity="end"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/vertical_scroll_container"
+            app:layout_constraintTop_toTopOf="@id/vertical_scroll_container"
+            app:layout_constraintBottom_toBottomOf="@id/vertical_scroll_container"/>
+
+        <TextView
+            android:id="@+id/btn_next_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/ztnature_medium"
+            android:includeFontPadding="false"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/btn_border"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
